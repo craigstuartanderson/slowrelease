@@ -20,32 +20,30 @@
 			font-size: 62.5%;
 			font-family: 'Roboto Condensed', sans-serif;
 		}
+		main{
+			height: 100vh;
+		}
 		.wrapper{
 			margin:0 auto;
 			padding: 70px 8%;
 		}
 		/*header contains logo and potential top nav*/
-		header{
-			display: flex;
-			justify-content: space-between;
-		}
 		.logo{
-			text-align: center;
-			width: 100%;
+			/* text-align: center; */
+			/* width: 100%; */
 		}
 		.logo img{
-			width: 15%;
+			/* width: 25%; */
 		}
 		header{
 			display: flex;
-			flex-direction: column;
 			justify-content: center;
 		}
 		
 		/*little subtitle - Toronto Ontaria*/
 		header p{
 			font-size: 0.7rem;
-			letter-spacing: 1.5px;
+			letter-spacing: 7.5px;
 			color: grey;
 			text-transform: uppercase;
 			text-align: center;
@@ -81,21 +79,31 @@
 		.main h1{
 			display: none;
 		}
+		.main-content{
+			display: flex;
+			justify-content: space-around;
+		}
 		.artists{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
 			list-style: none;
-			padding: 0px;
+			height: 100%;
+			padding: 0;
+			margin: 0;
 		}
 		.artists a{
 			text-decoration: none;
 			display: inline-block;
 			text-transform: uppercase;
-			font-size: 1.5rem;
-			line-height: 2;
+			font-size: 2.2rem;
+			/* line-height: 2; */
 			letter-spacing: 2px;
 			transition: 0.1s;
+			width: 100%;
 		}
 		.artists a span{
-			font-size: 0.5rem;
+			font-size: 1rem;
 			letter-spacing: 1.5px;
 			color: grey;
 		}
@@ -103,17 +111,19 @@
 			color: black;
 		}
 		.artists li:hover a{
-			color:rgb(247, 247, 138);
-			text-shadow: 1px 1px lightgrey;
+			color: grey;
+			/* text-shadow: 1px 1px lightgrey; */
 		}
-		.artist-select{
-		/*	color:rgb(247, 247, 138);*/
-			color:darkgrey;
-			/*text-shadow: 1px 1px lightgrey;*/
-		}
-		}
+		
 		.artists a:visited{
 			color: black;
+		}
+		
+		a.artist-select{
+			font-size: 2.5rem;
+			border-bottom: 2px solid black;
+			/* text-shadow:1px 1px 5px rgb(247, 247, 138); */
+			/* text-shadow: 1px 1px lightgrey; */
 		}
 		.place-holder{
 			width: 15%;
@@ -123,8 +133,12 @@
 			top: 70px;
 
 		}
+		.artist-cards{
+			width: 60%;
+		}
 		.card img{
 			display: block;
+			width: 175%;
 		}
 		.card{
 			position: relative;
@@ -141,9 +155,9 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+			background: linear-gradient(to left, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
 			opacity: 0;
-			transition: 0.5s;
+			transition: 0.2s;
 		}
 		.card:hover .overlay-card{
 			opacity: 1;
@@ -162,7 +176,7 @@
 			position: relative;
 			display: inline-block;
 			padding:2%;
-			font-size: 0.7rem;
+			font-size: 2rem;
 			color: lightgrey;
 			text-transform: uppercase;
 			text-decoration: none;
@@ -253,7 +267,7 @@
 			padding-top: 20px;
 		}
 		.gallery-bg h1{
-			font-size: 1rem;
+			font-size: 3rem;
 		}
 		.gallery img{
 			margin-left: 20px;
